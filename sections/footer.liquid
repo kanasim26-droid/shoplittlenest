@@ -1,0 +1,8 @@
+<footer class="site-footer">
+  <p class="footer-brand">{{ shop.name | default: 'LittleNest' }}</p>
+  <p>Little comforts for your little one.</p>
+  <small>© {{ 'now' | date: '%Y' }} {{ shop.name }}. All rights reserved.</small>
+</footer>
+{% schema %}
+{"name":"Footer","settings":[]}
+{% endschema %}
