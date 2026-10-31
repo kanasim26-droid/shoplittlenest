@@ -1,0 +1,12 @@
+<header class="site-header">
+  <a class="brand" href="{{ routes.root_url }}">{{ shop.name | default: 'LittleNest' }}</a>
+  <nav aria-label="Main navigation">
+    <a href="{{ routes.root_url }}">Home</a>
+    <a href="{{ routes.all_products_collection_url }}">Shop</a>
+    <a href="/pages/about">Our story</a>
+  </nav>
+  <a class="cart-link" href="{{ routes.cart_url }}">Bag ({{ cart.item_count }})</a>
+</header>
+{% schema %}
+{"name":"Header","settings":[]}
+{% endschema %}
