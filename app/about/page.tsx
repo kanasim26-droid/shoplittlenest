@@ -1,0 +1,1 @@
+export default function About(){return <main className="page simple"><span className="eyebrow">OUR LITTLE STORY</span><h1>Small beginnings.<br/><em>So much love.</em></h1><p>LittleNest is built around a simple thought: the earliest days deserve thoughtful comfort. We curate practical, lovely essentials for babies and the people who love them.</p></main>}
