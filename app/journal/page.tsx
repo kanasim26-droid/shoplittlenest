@@ -1,0 +1,1 @@
+export default function Journal(){return <main className="page simple"><span className="eyebrow">THE LITTLE NEST JOURNAL</span><h1>Notes for the <em>new chapters.</em></h1><p>Our journal is getting ready for its first stories. Blog articles can be managed in Shopify once the content connection is configured.</p></main>}
