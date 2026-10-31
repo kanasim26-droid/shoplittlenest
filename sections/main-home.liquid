@@ -1,0 +1,25 @@
+<section class="hero">
+  {% if section.settings.image != blank %}
+    <div class="hero-image">{{ section.settings.image | image_url: width: 1800 | image_tag: loading: 'eager', alt: section.settings.heading }}</div>
+  {% endif %}
+  <div class="hero-copy">
+    <p class="eyebrow">{{ section.settings.eyebrow | escape }}</p>
+    <h1>{{ section.settings.heading | escape }}</h1>
+    <p>{{ section.settings.text | escape }}</p>
+    <a class="button" href="{{ section.settings.button_link | default: routes.all_products_collection_url }}">{{ section.settings.button_label | escape }}</a>
+  </div>
+</section>
+{% schema %}
+{
+  "name":"LittleNest home hero",
+  "settings":[
+    {"type":"image_picker","id":"image","label":"Hero image"},
+    {"type":"text","id":"eyebrow","label":"Small heading","default":"Made for little moments"},
+    {"type":"text","id":"heading","label":"Heading","default":"A softer start to every little adventure"},
+    {"type":"textarea","id":"text","label":"Text","default":"Thoughtful everyday pieces for your little one, chosen with comfort in mind."},
+    {"type":"text","id":"button_label","label":"Button label","default":"Shop the collection"},
+    {"type":"url","id":"button_link","label":"Button link"}
+  ],
+  "presets":[{"name":"LittleNest home hero"}]
+}
+{% endschema %}
