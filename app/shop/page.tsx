@@ -1,0 +1,2 @@
+import {getProducts} from "@/lib/shopify";import ProductCard from "@/components/ProductCard";
+export default async function Shop(){const products=await getProducts();return <main className="page"><div className="page-intro"><span className="eyebrow">MADE FOR LITTLE BEGINNINGS</span><h1>Shop the <em>collection.</em></h1><p>Everyday favourites, sweet new arrivals and thoughtful gifts.</p></div><div className="grid">{products.map((p,i)=><ProductCard key={p.id} product={p} index={i}/>)}</div></main>}
